@@ -1,0 +1,49 @@
+<ng-container *ngIf="ngvals">
+    <div>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col"[ngClass]="columns[0]">#</th>
+                <th scope="col"[ngClass]="columns[1]">Id</th>
+                <th scope="col" [ngClass]="columns[2]">Name</th>
+                <th scope="col" [ngClass]="columns[3]">Mobile</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"[ngClass]="columns[0]">1</th>
+                <td [ngClass]="columns[1]">101</td>
+                <td [ngClass]="columns[2]">Anu</td>
+                <td [ngClass]="columns[3]">884748498</td>
+              </tr>
+              <tr>
+                <th scope="row"[ngClass]="columns[0]">2</th>
+                <td [ngClass]="columns[1]">102</td>
+                <td [ngClass]="columns[2]">Jacob</td>
+                <td [ngClass]="columns[3]">989893039</td>
+              </tr>
+              <tr>
+                <th scope="row"[ngClass]="columns[0]">3</th>
+                <td [ngClass]="columns[1]">103</td>
+                <td [ngClass]="columns[2]">Nora</td>
+                <td [ngClass]="columns[3]">977893039</td>
+              </tr>
+              <tr>
+                <th scope="row"[ngClass]="columns[0]">4</th>
+                <td [ngClass]="columns[1]">104</td>
+                <td [ngClass]="columns[2]">Manu</td>
+                <td [ngClass]="columns[3]">98000488039</td>
+              </tr>
+              <tr>
+                <th scope="row"[ngClass]="columns[0]">5</th>
+                <td [ngClass]="columns[1]">105</td> 
+                <td [ngClass]="columns[2]">Kiran</td>
+                <td [ngClass]="columns[3]">972433039</td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="abc" (click)="chng()">Change Style</button>
+        </div>
+    </ng-container>
+ <button class="button" (click)="shows()">Show Table</button>
+    <button class="button" (click)="hides()">Hide Table</button>
